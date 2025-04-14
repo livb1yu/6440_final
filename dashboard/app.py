@@ -16,13 +16,13 @@ import matplotlib.pyplot as plt
 
 def load_record_list():
     # Load record_list.csv and sample 10,000 rows for performance
-    df = pd.read_csv('../sampled_record_list.csv')
+    df = pd.read_csv('sampled_record_list.csv')
     # df = df.sample(n=10000, random_state=42)
     return df
 
 def load_machine_measurements():
     # Load the additional machine measurements CSV.
-    df = pd.read_csv('../sampled_machine_measurements.csv')
+    df = pd.read_csv('sampled_machine_measurements.csv')
     return df
 
 def visualize_record_distribution(df, fig):
